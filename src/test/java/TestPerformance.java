@@ -20,29 +20,35 @@ public class TestPerformance {
     Bean bean;
     public TestPerformance() {
         BeanChild beanChild = new BeanChild();
-        beanChild.setC(1);
-        beanChild.setD(2);
+        beanChild.setNumber1(1);
+        beanChild.setNumber2(2);
 
         bean = new Bean();
-        bean.setA("bean");
-        bean.setB(1);
+        bean.setName("bean");
+        bean.setArg(1);
 
         bean.setBeanChild(beanChild);
         Map<String, Integer> beanChildMap = new HashMap<String, Integer>();
-        List<Integer> beanChildList = new ArrayList<Integer>();
         for(int i = 0; i != 10; i++) {
             beanChildMap.put(String.valueOf(i), i);
-            beanChildList.add(i);
+        }
+        bean.setBeanChildMap(beanChildMap);
+
+        List<BeanChild> beanChildList = new ArrayList<BeanChild>();
+        for(int i = 0; i != 10; i++) {
+            beanChildList.add(beanChild);
         }
         bean.setBeanChildList(beanChildList);
-        bean.setBeanChildMap(beanChildMap);
+
+
+
     }
 
     public int testHessian1Serialize() {
         byte[] data = new byte[0];
         try {
             data = HessianSerialize.h1serialize(bean);
-            Bean hessian1Bean = (Bean)HessianSerialize.h1deserialize(data);
+            HessianSerialize.h1deserialize(data);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -54,7 +60,7 @@ public class TestPerformance {
         byte[] data = new byte[0];
         try {
             data = HessianSerialize.h2serialize(bean);
-            Bean hessian2Bean = (Bean)HessianSerialize.h2deserialize(data);
+            HessianSerialize.h2deserialize(data);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -66,7 +72,7 @@ public class TestPerformance {
         byte[] data = new byte[0];
         try {
             data = HessianSerialize.h2serializeDeflate(bean);
-            Bean hessian2DeflateBean = (Bean)HessianSerialize.h2deserializeDeflate(data);
+            HessianSerialize.h2deserializeDeflate(data);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -78,7 +84,7 @@ public class TestPerformance {
         byte[] data = new byte[0];
         try {
             data = ProtobufSerialize.coding(bean.getClass(), bean);
-            Bean bean1 = (Bean)ProtobufSerialize.decoding(bean.getClass(), data);
+            ProtobufSerialize.decoding(bean.getClass(), data);
         } catch (InvalidProtocolBufferException e) {
             e.printStackTrace();
         }
@@ -86,7 +92,7 @@ public class TestPerformance {
         return data.length;
     }
 
-//    @Test
+    @Test
     public void testPerformance() {
         TestPerformance testPerformance = new TestPerformance();
         int testTime = 1000;
@@ -140,6 +146,9 @@ public class TestPerformance {
             System.out.println(new String(data));
 
             data = HessianSerialize.h2serialize(bean);
+            System.out.println(new String(data));
+
+            data = ProtobufSerialize.coding(bean.getClass(), bean);
             System.out.println(new String(data));
         } catch (IOException e) {
             e.printStackTrace();

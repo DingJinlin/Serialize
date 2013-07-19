@@ -10,10 +10,10 @@ import java.util.Map;
  * Time: 下午3:33
  */
 public class Bean implements Serializable {
-    String a;
-    int b;
+    String name;
+    int arg;
 
-    List<Integer> beanChildList;
+    List<BeanChild> beanChildList;
     Map<String, Integer> beanChildMap;
     BeanChild beanChild;
 
@@ -21,30 +21,34 @@ public class Bean implements Serializable {
 
     }
 
-    public String getA() {
-        return a;
+    @SuppressWarnings("unchecked")
+    public String getName() {
+        return name;
     }
 
-    public void setA(String a) {
-        this.a = a;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getB() {
-        return b;
+    @SuppressWarnings("unchecked")
+    public int getArg() {
+        return arg;
     }
 
-    public void setB(int b) {
-        this.b = b;
+    public void setArg(int arg) {
+        this.arg = arg;
     }
 
-    public List<Integer> getBeanChildList() {
+    @SuppressWarnings("unchecked")
+    public List<BeanChild> getBeanChildList() {
         return beanChildList;
     }
 
-    public void setBeanChildList(List<Integer> beanChildList) {
+    public void setBeanChildList(List<BeanChild> beanChildList) {
         this.beanChildList = beanChildList;
     }
 
+    @SuppressWarnings("unchecked")
     public Map<String, Integer> getBeanChildMap() {
         return beanChildMap;
     }
@@ -53,6 +57,7 @@ public class Bean implements Serializable {
         this.beanChildMap = beanChildMap;
     }
 
+    @SuppressWarnings("unchecked")
     public BeanChild getBeanChild() {
         return beanChild;
     }
