@@ -11,7 +11,7 @@ public class BeanChild implements Serializable {
     int number1;
     int number2;
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unused")
     public int getNumber1() {
         return number1;
     }
@@ -20,7 +20,7 @@ public class BeanChild implements Serializable {
         this.number1 = number1;
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unused")
     public int getNumber2() {
         return number2;
     }

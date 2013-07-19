@@ -4,8 +4,6 @@
     <list default="true" id="e86909af-b6c7-4e31-a91d-e024d2bbbb2f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/bean/Bean.java" afterPath="$PROJECT_DIR$/src/test/java/bean/Bean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/bean/BeanChild.java" afterPath="$PROJECT_DIR$/src/test/java/bean/BeanChild.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Serialize.iml" afterPath="$PROJECT_DIR$/Serialize.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestPerformance.java" afterPath="$PROJECT_DIR$/src/test/java/TestPerformance.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Protobuf2Pojo.iws" />
@@ -17,7 +15,7 @@
     <file path="/fragment.java" changelist="e86909af-b6c7-4e31-a91d-e024d2bbbb2f" time="1374219753281" ignored="false" />
     <file path="/Bean.java" changelist="e86909af-b6c7-4e31-a91d-e024d2bbbb2f" time="1374220138218" ignored="false" />
     <file path="/Bean2.java" changelist="e86909af-b6c7-4e31-a91d-e024d2bbbb2f" time="1374165723160" ignored="false" />
-    <file path="/Dummy.txt" changelist="e86909af-b6c7-4e31-a91d-e024d2bbbb2f" time="1374220645640" ignored="false" />
+    <file path="/Dummy.txt" changelist="e86909af-b6c7-4e31-a91d-e024d2bbbb2f" time="1374220781218" ignored="false" />
     <file path="/HessianSerialize.java" changelist="e86909af-b6c7-4e31-a91d-e024d2bbbb2f" time="1374198302359" ignored="false" />
     <file path="/BeanChild.java" changelist="e86909af-b6c7-4e31-a91d-e024d2bbbb2f" time="1374220603796" ignored="false" />
     <file path="/TestPerformance.java" changelist="e86909af-b6c7-4e31-a91d-e024d2bbbb2f" time="1374220314109" ignored="false" />
@@ -249,28 +247,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanChild.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BeanChild.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bean/BeanChild.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="104" selection-start="355" selection-end="355" vertical-scroll-proportion="0.5796345">
+            <state line="23" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="-5.32">
               <folding>
-                <element signature="e#190#220#0" expanded="true" />
-                <element signature="e#367#397#0" expanded="true" />
+                <element signature="e#190#217#0" expanded="true" />
+                <element signature="e#364#391#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bean.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Bean.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/bean/Bean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="62" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
+            <state line="43" column="59" selection-start="771" selection-end="771" vertical-scroll-proportion="0.3550914">
               <folding>
-                <element signature="e#354#384#0" expanded="true" />
-                <element signature="e#519#549#0" expanded="true" />
-                <element signature="e#672#702#0" expanded="true" />
-                <element signature="e#909#939#0" expanded="true" />
-                <element signature="e#1150#1180#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#354#381#0" expanded="true" />
+                <element signature="e#516#543#0" expanded="true" />
+                <element signature="e#666#693#0" expanded="true" />
+                <element signature="e#900#927#0" expanded="true" />
+                <element signature="e#1138#1165#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -330,8 +329,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/taobao/hsf/pb/builder/impl/JavaBeanBuilder.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestPerformance.java" />
-        <option value="$PROJECT_DIR$/src/test/java/bean/Bean.java" />
         <option value="$PROJECT_DIR$/src/test/java/bean/BeanChild.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bean/Bean.java" />
       </list>
     </option>
   </component>
@@ -755,6 +754,11 @@
       <created>1374162655730</created>
       <updated>1374162655730</updated>
     </task>
+    <task id="LOCAL-00001" summary="修改测试代码">
+      <created>1374220789390</created>
+      <updated>1374220789390</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -779,7 +783,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972583" sideWeight="0.67132866" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963924" sideWeight="0.67412585" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963924" sideWeight="0.67412585" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29650348" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -944,25 +948,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bean/Bean.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/bean/BeanChild.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="62" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
+        <state line="23" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="-5.32">
           <folding>
-            <element signature="e#354#384#0" expanded="true" />
-            <element signature="e#519#549#0" expanded="true" />
-            <element signature="e#672#702#0" expanded="true" />
-            <element signature="e#909#939#0" expanded="true" />
-            <element signature="e#1150#1180#0" expanded="true" />
+            <element signature="e#190#217#0" expanded="true" />
+            <element signature="e#364#391#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bean/BeanChild.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/bean/Bean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="104" selection-start="355" selection-end="355" vertical-scroll-proportion="0.5796345">
+        <state line="43" column="59" selection-start="771" selection-end="771" vertical-scroll-proportion="0.3550914">
           <folding>
-            <element signature="e#190#220#0" expanded="true" />
-            <element signature="e#367#397#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#354#381#0" expanded="true" />
+            <element signature="e#516#543#0" expanded="true" />
+            <element signature="e#666#693#0" expanded="true" />
+            <element signature="e#900#927#0" expanded="true" />
+            <element signature="e#1138#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>

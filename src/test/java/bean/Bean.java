@@ -21,7 +21,7 @@ public class Bean implements Serializable {
 
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unused")
     public String getName() {
         return name;
     }
@@ -30,7 +30,7 @@ public class Bean implements Serializable {
         this.name = name;
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unused")
     public int getArg() {
         return arg;
     }
@@ -39,7 +39,7 @@ public class Bean implements Serializable {
         this.arg = arg;
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unused")
     public List<BeanChild> getBeanChildList() {
         return beanChildList;
     }
@@ -48,7 +48,7 @@ public class Bean implements Serializable {
         this.beanChildList = beanChildList;
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unused")
     public Map<String, Integer> getBeanChildMap() {
         return beanChildMap;
     }
@@ -57,7 +57,7 @@ public class Bean implements Serializable {
         this.beanChildMap = beanChildMap;
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings("unused")
     public BeanChild getBeanChild() {
         return beanChild;
     }
